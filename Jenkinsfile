@@ -33,9 +33,9 @@ pipeline {
 	stage ('copy index file to docker container'){
 	steps{
 	      sh "chmod -R 777 /mnt"
-		  sh "docker cp /mnt/Assignment/22q1/Assignment/index.html f29fc06549ea:/usr/local/apache2/htdocs"
-		  sh "docker cp /mnt/Assignment/22q2/Assignment/index.html 0e747fc85e3b:/usr/local/apache2/htdocs"
-		  sh "docker cp /mnt/Assignment/22q3/Assignment/index.html d56d06276d82:/usr/local/apache2/htdocs"
+		  sh "docker cp /mnt/Assignment/22q1/Assignment/index.html fcacd8ecc6c8:/usr/local/apache2/htdocs"
+		  sh "docker cp /mnt/Assignment/22q2/Assignment/index.html 8a54e83ba0c2:/usr/local/apache2/htdocs"
+		  sh "docker cp /mnt/Assignment/22q3/Assignment/index.html e57da525c543:/usr/local/apache2/htdocs"
 	}
 	
 	}
